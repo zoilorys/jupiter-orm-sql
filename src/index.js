@@ -11,8 +11,8 @@ function queryFactory(orm, table) {
       orm.select.apply(undefined, columnArray).from(table);
   };
 
-  query.insert = (insertArray, returns) => {
-    return orm.insert(insertArray, returns).into(table);
+  query.insert = (insertArray) => {
+    return orm.insert(insertArray).into(table);
   };
 
   query.update = (updatesObj) => {
@@ -20,10 +20,10 @@ function queryFactory(orm, table) {
   };
 
   query.delete = (queryArray) => {
-    return queryArray.length > 1 ?
+    return queryArray ?
       queryArray.reduce((seq, data) => { return seq.orWhere(data); }, orm)
         .del().from(table) :
-      orm.where(queryArray[0]).del().from(table);
+      orm.del().from(table);
   };
 
   return query;
