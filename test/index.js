@@ -6,8 +6,8 @@ const options = {
   client : 'mysql',
   connection : {
     host : 'localhost',
-    user : 'test_user',
-    password : 'password',
+    user : 'travis',
+    password : '',
     database : 'test_orm'
   }
 };
