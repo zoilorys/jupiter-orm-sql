@@ -73,6 +73,13 @@ describe('CRUD operations', () => {
         { name : 'user1' },
         { name : 'updated' }
       ]);
+    });
+
+    orm.query('test').select(['name'], true).then(result => {
+      expect(result).to.be.ok.and.to.be.eql([
+        { name : 'user1' },
+        { name : 'updated' }
+      ]);
       done();
     });
   });
