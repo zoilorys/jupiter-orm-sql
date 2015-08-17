@@ -7,6 +7,6 @@ services:
 sudo: required
 before_script:
   - mysql -e 'create database test_orm;'
-  - mysql -e 'create table test(id int not null, name varchar(32) not null);'
+  - mysql -e 'use test_orm; create table test(id int not null, name varchar(32) not null);'
 after_success:
   - ./node_modules/.bin/mocha --require babel/register
