@@ -1,7 +1,7 @@
 ## Jupiter-ORM-SQL
 [![Build Status](https://travis-ci.org/zoilorys/jupiter-orm-sql.svg?branch=master)](https://travis-ci.org/zoilorys/jupiter-orm-sql) [![Coverage Status](https://coveralls.io/repos/zoilorys/jupiter-orm-sql/badge.svg?branch=master&service=github)](https://coveralls.io/github/zoilorys/jupiter-orm-sql?branch=master) [![Code Climate](https://codeclimate.com/github/zoilorys/jupiter-orm-sql/badges/gpa.svg)](https://codeclimate.com/github/zoilorys/jupiter-orm-sql)
 
-SQL ORM based on [knex.js](http://knexjs.org/). Query API object support all of [knex.js](http://knexjs.org/) query builder modifier functions, that you can chain to its [.select()](), [.insert()](), [.update()]() and [.delete()]() functions, e.g. [.join()](http://knexjs.org/#Builder-join), [.where()](http://knexjs.org/#Builder-where), etc.
+SQL ORM based on [knex.js](http://knexjs.org/). Query API object support all of [knex.js](http://knexjs.org/) query builder modifier functions, that you can chain to its [.select()](https://github.com/zoilorys/jupiter-orm-sql#selectcolumnnamesarray-distinct), [.insert()](https://github.com/zoilorys/jupiter-orm-sql#insertinsertarray), [.update()](https://github.com/zoilorys/jupiter-orm-sql#updateupdateobj) and [.delete()](https://github.com/zoilorys/jupiter-orm-sql#deletequeryarray) functions, e.g. [.join()](http://knexjs.org/#Builder-join), [.where()](http://knexjs.org/#Builder-where), etc.
 ###### Note : examples provided for *mysql* module, but adapter supports all modules supported by knex.js. Click [here](http://knexjs.org/#Installation-node) for more info.
 
 ## API
