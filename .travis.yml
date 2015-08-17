@@ -1,0 +1,9 @@
+language: node_js
+node_js:
+  - "0.12"
+  - "iojs"
+services:
+  - mysql-server
+sudo: required
+after_success:
+  - ./node_modules/.bin/mocha --require babel/register

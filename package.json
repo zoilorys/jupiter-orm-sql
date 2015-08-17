@@ -1,0 +1,33 @@
+{
+  "name": "jupiter-orm-sql",
+  "version": "0.1.1",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha test/ --require babel/register",
+    "watch": "mocha test/ --require babel/register --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zoilorys/jupiter-orm-sql.git"
+  },
+  "author": "Zoilorys <zoilorys@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zoilorys/jupiter-orm-sql/issues"
+  },
+  "homepage": "https://github.com/zoilorys/jupiter-orm-sql#readme",
+  "dependencies": {
+    "es6-promise": "^3.0.2",
+    "knex": "^0.8.6",
+    "mysql": "^2.8.0",
+    "ramda": "^0.17.1"
+  },
+  "devDependencies": {
+    "chai": "^3.2.0",
+    "mocha": "^2.2.5"
+  }
+}
