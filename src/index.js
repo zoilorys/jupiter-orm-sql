@@ -1,5 +1,4 @@
 import knex from 'knex';
-import { Promise } from 'es6-promise';
 import { partial } from 'ramda';
 
 function queryFactory(orm, table) {

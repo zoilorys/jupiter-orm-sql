@@ -21,7 +21,6 @@
   },
   "homepage": "https://github.com/zoilorys/jupiter-orm-sql#readme",
   "dependencies": {
-    "es6-promise": "^3.0.2",
     "knex": "^0.8.6",
     "mysql": "^2.8.0",
     "ramda": "^0.17.1"
